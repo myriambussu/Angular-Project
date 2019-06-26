@@ -1,0 +1,10 @@
+<img *ngIf="!myBooks" src="/assets/img/load.gif" alt="loader">
+
+<div *ngFor="let book of myBooks">
+    <a routerLink="/book/{{book.id}}">
+    <!-- <h1 (click)="goTo()"> Book Name : {{books.name}}</h1> -->
+    <p> <b>Book Name : </b> {{book.name}}</p>
+    <p> <b> Book Author :</b> {{book.author}}</p>
+    <p> <b> Num pages :</b> {{book.pageNum}}</p>
+</a>
+</div>

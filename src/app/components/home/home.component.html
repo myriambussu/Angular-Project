@@ -1,0 +1,12 @@
+<img src="/assets/img/1.jpg" alt="books" [width]="imgWidth">
+
+<!-- <h1 [ngClass]= "{'danger': somebool,'no':!somebool}"> Book one </h1>
+<h1  [ngStyle]= "{'color': 'red'}"> Book two </h1>
+<h1  [ngStyle]= "{'color': somebool ? 'red' : 'blue'}"> Book three </h1> -->
+
+<div>
+    <button [class.danger]= "imgWidth <=300" *ngIf="imgWidth >=120" (click)="dec()">-</button>
+    <button (click)="res()">=</button>
+    <button [class.danger]= "imgWidth >=600" *ngIf="imgWidth <= 700" (click)="inc()">+</button>
+    <input [(ngModel)]="imgWidth" type="range" min="100" value="500" max="800" step="10">
+</div>

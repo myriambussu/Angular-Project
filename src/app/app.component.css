@@ -1,0 +1,36 @@
+section{
+     height: 100%;
+   /* background-color: rgba(8, 88, 88, 0.568); */
+    border: solid white 1px;
+    display: grid;
+    grid-template-rows: 20% 70% 10%;
+    grid-template-columns: repeat(12,1fr);
+    text-align: center;
+    box-sizing: border-box;
+    
+}
+
+header{
+    border: solid white 1px;
+    grid-column: span 12;
+
+}
+
+aside{
+    border: solid white 1px;
+    grid-column: span 3;
+}
+
+main{
+    border: solid white 1px;
+    grid-column: span 9;
+    overflow: auto;
+
+}
+
+footer{
+    border: solid white 1px;
+    grid-column: span 12;
+
+
+}
